@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Z</title>
+    <link rel="stylesheet" href="css/personaje.css">
+    <script src="js/personaje.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado-detalle">
+            <h1>Dragon Ball API</h1>
+            <p class="subtitulo">Detalle de personaje y sus transformaciones</p>
+        </header>
+
+        <div id="detallePersonaje" class="mensaje-carga">
+            Cargando información del personaje...
+        </div>
+
+        <section id="planetaOrigen" class="seccion-planeta" style="display: none;">
+            <h2>Planeta de origen</h2>
+            <div class="tarjeta-planeta">
+                <img id="imagenPlaneta" src="" alt="Planeta" class="imagen-planeta">
+                <div class="info-planeta">
+                    <h3 id="nombrePlaneta"></h3>
+                    <p id="estadoPlaneta" class="estado-planeta"></p>
+                    <p id="descripcionPlaneta" class="descripcion-planeta"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="transformaciones" class="seccion-transformaciones" style="display: none;">
+            <h2 id="tituloTransformaciones">Transformaciones de</h2>
+            <div id="gridTransformaciones" class="grid-transformaciones">
+            </div>
+        </section>
+    </div>
+
+    <script src="js/personaje.js"></script>
+</body>
+</html>
